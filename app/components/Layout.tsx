@@ -34,6 +34,18 @@ export default function Layout() {
                                 Completions
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                to="/object-generation"
+                                className={({ isActive }) =>
+                                    `block p-2 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg ${
+                                        isActive ? 'bg-green-500' : ''
+                                    }`
+                                }
+                            >
+                                Object generation
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
             </header>
