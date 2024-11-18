@@ -46,6 +46,18 @@ export default function Layout() {
                                 Object generation
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                to="/chat"
+                                className={({ isActive }) =>
+                                    `block p-2 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg ${
+                                        isActive ? 'bg-green-500' : ''
+                                    }`
+                                }
+                            >
+                                Chat
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
             </header>
