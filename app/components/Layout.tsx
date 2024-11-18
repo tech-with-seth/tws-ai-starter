@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from 'react-router';
-import logo from '../images/rr_logo_dark.svg';
+import lightLogo from '../images/rr_logo_light.svg';
+import darkLogo from '../images/rr_logo_dark.svg';
 
 export default function Layout() {
     return (
@@ -10,8 +11,13 @@ export default function Layout() {
                         <li>
                             <Link to="/">
                                 <img
-                                    className="w-8"
-                                    src={logo}
+                                    className="w-12 block dark:hidden"
+                                    src={lightLogo}
+                                    alt="React Router 7 Logo"
+                                />
+                                <img
+                                    className="w-12 hidden dark:block"
+                                    src={darkLogo}
                                     alt="React Router 7 Logo"
                                 />
                             </Link>
