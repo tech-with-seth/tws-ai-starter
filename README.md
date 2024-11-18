@@ -1,6 +1,6 @@
-# Welcome to React Router!
+# React Router 7 & Open AI Assistants Quickstart
 
-- 📖 [React Router docs](https://reactrouter.com/dev)
+-   📖 [React Router docs](https://reactrouter.com/dev)
 
 ## Development
 
@@ -32,8 +32,8 @@ If you're familiar with deploying Node applications, the built-in app server is 
 
 Make sure to deploy the output of `npm run build`
 
-- `build/server`
-- `build/client`
+-   `build/server`
+-   `build/client`
 
 ## Styling
 
