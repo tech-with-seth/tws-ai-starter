@@ -1,8 +1,16 @@
-# React Router 7 & Open AI Assistants Quickstart
+# React Router 7 & Open AI Quickstart
 
--   📖 [React Router docs](https://reactrouter.com/dev)
+![React Router 7 and Open AI showcase](./rr7-openai-hero.png)
+
+📖 [React Router docs](https://reactrouter.com/dev)
 
 ## Development
+
+Add your Open AI key to an `.env` file:
+
+```bash
+OPENAI_API_KEY="<YOUR_OPEN_AI_API_KEY>"
+```
 
 Run the dev server:
 

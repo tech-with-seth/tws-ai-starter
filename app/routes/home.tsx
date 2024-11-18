@@ -12,13 +12,10 @@ export const meta: MetaFunction = () => {
 
 export default function Home() {
     return (
-        <div className="py-12">
-            <h1 className="text-3xl font-bold text-center">
-                Welcome to the
-                <br />
-                React Router 7 & Open AI Assistants
-                <br />
-                Quickstart
+        <div className="container mx-auto pt-12">
+            <h2 className="text-3xl mb-2">Welcome to the</h2>
+            <h1 className="font-black text-4xl">
+                React Router 7 Open AI Quickstart
             </h1>
         </div>
     );

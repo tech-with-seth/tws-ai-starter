@@ -8,9 +8,10 @@ export default function Completions() {
 
     return (
         <div className="h-full">
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-3xl py-8">
+                <h1 className="text-2xl mb-4">Completions</h1>
                 <form
-                    className="flex items-center gap-4 p-4"
+                    className="flex items-center gap-4"
                     onSubmit={handleSubmit}
                 >
                     <div className="grow">
@@ -29,7 +30,13 @@ export default function Completions() {
                         </button>
                     </div>
                 </form>
-                <div className="p-4">{completion}</div>
+                <div className="py-4">
+                    {!!completion ? (
+                        completion
+                    ) : (
+                        <span className="text-zinc-300 dark:text-zinc-500">{`Completion will appear here...`}</span>
+                    )}
+                </div>
             </div>
         </div>
     );
