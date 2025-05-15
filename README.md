@@ -1,4 +1,6 @@
-# React Router 7 & Open AI Quickstart
+# tws-ai-starter
+
+React Router 7 & Open AI Quickstart
 
 ![React Router 7 and Open AI showcase](./rr7-openai-hero.png)
 
