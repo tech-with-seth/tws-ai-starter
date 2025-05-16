@@ -7,17 +7,22 @@ import {
     Scripts,
     ScrollRestoration
 } from 'react-router';
-import type { LinksFunction } from 'react-router';
+import type { LinksFunction, NavLinkRenderProps } from 'react-router';
 import lightLogo from './images/rr_logo_light.svg';
 import darkLogo from './images/rr_logo_dark.svg';
 
 import './app.css';
 
-export const links: LinksFunction = () => [];
-
 function Header() {
+    const navLinkClassName = ({ isActive }: NavLinkRenderProps) =>
+        `block p-2 rounded-lg ${
+            isActive
+                ? 'bg-green-500 hover:bg-green-600 text-white'
+                : 'bg-zinc-300 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-zinc-100'
+        }`;
+
     return (
-        <header className="bg-zinc-200 dark:bg-zinc-900">
+        <header className="bg-white dark:bg-zinc-900 border-b border-zinc-300 dark:border-zinc-700 mb-8">
             <div className="container mx-auto">
                 <ul className="flex items-center gap-4 p-4">
                     <li>
@@ -35,14 +40,7 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <NavLink
-                            to="/completions"
-                            className={({ isActive }) =>
-                                `block p-2 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg ${
-                                    isActive ? 'bg-green-500' : ''
-                                }`
-                            }
-                        >
+                        <NavLink to="/completions" className={navLinkClassName}>
                             Completions
                         </NavLink>
                     </li>
