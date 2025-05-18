@@ -44,9 +44,9 @@ export default function Completions({ actionData }: Route.ComponentProps) {
                 </Form>
             </div>
             {actionData && (
-                <div className="mx-auto max-w-3xl py-8 border border-zinc-300 bg-white p-8 rounded-xl">
+                <div className="mx-auto max-w-3xl py-8 border border-zinc-300 bg-white dark:bg-zinc-900 dark:border-zinc-700 p-8 rounded-xl mb-4">
                     <h3 className="text-xl font-bold mb-4">Response</h3>
-                    {actionData}
+                    <p className="whitespace-pre-line">{actionData}</p>
                 </div>
             )}
         </div>
